@@ -1,0 +1,131 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://www.icst.pku.edu.cn/course/icb/Projects/oad.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="language" content="english">
+<title>Switch Mode Based Deep Fractional Interpolation in Video Coding</title>
+<link rel="stylesheet" type="text/css" href="./SwitchMode/project.css">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body>
+<div id="main">
+  
+	<div class="content"><br>
+		<h1>Switch Mode Based Deep Fractional Interpolation in Video Coding</h1>
+		<div class="authors">
+        	<div class="author">
+				 <a href="" style="text-decoration: none">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+			</div>
+			<div class="author">
+				 <a href="http://www.icst.pku.edu.cn/struct/people/xsf.html" style="text-decoration: none">Sifeng Xia</a>
+			</div>        
+			<div class="author">
+				 <a href="http://www.icst.pku.edu.cn/course/icb/people/whyang.html" style="text-decoration: none">Wenhan Yang</a>
+		    </div>
+			
+			<div class="author">
+				 <a href="https://huzi96.github.io/" style="text-decoration: none">Yueyu Hu</a>
+		    </div>
+			
+			<div class="author">
+				 <a href="" style="text-decoration: none">Wen-Huang Cheng</a>
+		    </div>
+			
+			<div class="author">
+				 <a href="http://www.icst.pku.edu.cn/struct/people/liujiaying.html" style="text-decoration: none">Jiaying Liu</a>
+			</div>
+		</div>
+		<br>
+	  	<p class="banner" align="center"><i>ISCAS</i>, 2019. </p>
+
+
+		<div class="Abstract sec">
+			<h2>Abstract</h2>
+			<div class="desp">
+				<p style="text-align:justify">
+				 Fractional interpolation is a significant technology
+in motion compensation of video coding. It generates subpixel
+level reference samples in inter prediction to facilitate
+temporal redundancy removal between video frames. Recently,
+some methods explore to introduce the deep learning technique
+for fractional interpolation and have obtained better compression
+results. However, existing deep learning based methods still treat
+fractional interpolation as a traditional interpolation problem
+but fail to adjust it to the motion compensation scenario. In
+this paper, we design a switch mode based deep fractional
+interpolation method to introduce integer pixels of different
+positions to the interpolation of sub-pixel position samples.
+By switching between integer pixels of different positions, our
+method can infer the sub-pixels with smaller variations and
+achieve better fractional interpolation results. Consequently the
+motion compensation performance can be further improved.
+Experimental results have also verified the efficiency of the
+switch mode based deep fractional interpolation. Compared with
+High Efficiency Video Coding, our method achieves 2.8% bit
+saving on average and up to 6.2% bit saving under low-delay P
+configuration.</p>
+			</div>
+            <h2>Framework</h2>
+			<div align="center" id="flowchart">
+		  		<img src="./img/net.png" width="100%">
+		  		<p style="text-align: justify">Figure. 1. Framework of the proposed variation learning network. The network first extracts the shared feature map from the integer-position sample. Then
+the variations that identify the differences between different sub-pixel position samples and integer-position samples are inferred separately from the shared
+feature map by group convolution. Sub-pixel position samples can be later derived by adding the inferred variations to corresponding integer-position samples.
+</div>
+		</div>
+        <h2>Results</h2>
+			<div align="center" id="res">
+			<p style="text-align: center">Table 1: BD-rate reduction of the proposed method compared to HEVC.
+			<img src="./img/res.png" width="50%">
+		  	<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:5px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:0px 0px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-s6z2{text-align:center}
+</style>
+	
+</div>
+
+		<div class="download sec">
+			<h2>Download</h2>
+			<div>
+				<li><strong><a href="https://ieeexplore.ieee.org/document/8702522">Paper</a></strong>  </li>
+				<li><strong><a href="https://github.com/pigundermoon/SwitchMode">Code</a></strong>  </li>
+				<!--<li><strong>Supplementary Material</strong>: <a href="http://www.icst.pku.edu.cn/course/icb/Projects/MALDEC_files/files/supp.pdf">pdf</a></li>-->
+			</div>
+		</div>
+
+	  <div class="citation sec">
+			<h2>Citation</h2>
+			<p class="bibtex">@inproceedings{SwitchMode, 
+&nbsp;&nbsp; author={S. Xia and W. Yang and Y. Hu and W. H. Cheng and J. Liu}, 
+&nbsp;&nbsp; booktitle={IEEE International Symposium on Circuits and Systems (ISCAS)}, 
+&nbsp;&nbsp; title={Switch Mode Based Deep Fractional Interpolation in Video Coding}, 
+&nbsp;&nbsp; year={2019}, 
+&nbsp;&nbsp; }
+			</p>
+	  </div>
+
+<!-- 		<div class="experiments sec">
+			<h2>Additional Results</h2>
+			<div id="images">
+				<h3>Action Detection Performance</h3>
+				<div align="center" id="table">
+					<p>Table 1. F 1−Score on OAD dataset</p>
+					<img src='OAD/figures/OAD_table.png' width='50%' >
+				</div>
+			</div>
+		</div>
+		<br></br> -->
+
+
+<div class="citation sec">
+    <h2>&nbsp;</h2>
+    </div>
+  </div>
+</div>
+
+
+</body></html>
