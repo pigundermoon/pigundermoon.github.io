@@ -1,0 +1,123 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://www.icst.pku.edu.cn/course/icb/Projects/oad.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="language" content="english">
+<title>Deep Inter Prediction Via Pixel-Wise Motion Oriented Reference Generation
+</title>
+<link rel="stylesheet" type="text/css" href="./MASCNN/project.css">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body>
+<div id="main">
+  
+	<div class="content"><br>
+		<h1>Deep Inter Prediction Via Pixel-Wise Motion Oriented <br> Reference Generation</h1>
+		<div class="authors">
+        	<div class="author">
+				 <a href="" style="text-decoration: none">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+			</div>
+			<div class="author">
+				 <a href="http://www.icst.pku.edu.cn/struct/people/xsf.html" style="text-decoration: none">Sifeng Xia</a>
+			</div>
+			<div class="author">
+				 <a href="https://flyywh.github.io/" style="text-decoration: none">Wenhan Yang</a>
+		    </div>
+			<div class="author">
+				 <a href="https://huzi96.github.io/" style="text-decoration: none">Yueyu Hu</a>
+		    </div>
+			<div class="author">
+				 <a href="http://39.96.165.147/people/liujiaying.html" style="text-decoration: none">Jiaying Liu</a>
+			</div>
+		</div>
+		<br>
+	  	<p class="banner" align="center"><i>ICIP</i>, 2019. </p>
+
+
+		<div class="Abstract sec">
+			<h2>Abstract</h2>
+			<div class="desp">
+				<p style="text-align:justify">
+				 Inter prediction is an important module in video coding for
+temporal redundancy removal, where the reference blocks
+are searched from the previously coded frames and employed
+to predict the block to be coded. However, apart from regular
+block-wise shift motion, there usually exists inconsistent
+pixel-wise motion such as rotation and deformation between
+blocks, which will largely degrade the prediction performance.
+In this paper, we propose a Multiscale Adaptive
+Separable Convolutional Neural Network (MASCNN) to
+generate pixel-wise closer reference frames for inter prediction.
+A multiscale network is built to interpolate the target
+frame from coarse to fine. Reconstruction losses are enforced
+on each scale to make the network infer the main structure
+at small scales, which improves the interpolation accuracy
+of the network. Furthermore, a sum of absolute transformed
+difference (SATD) loss function is proposed to regularize the
+network training, which further improves the coding performance.
+Compared with HEVC, our method can obtain on
+average 5:7% BD-rate saving and up to 9:9% BD-rate saving
+for the luma component under the random access configuration.</p>
+			</div>
+            <h2>Framework</h2>
+			<div align="center" id="flowchart">
+		  		<img src="./img/net.PNG" width="100%">
+		  		<p style="text-align: justify">Figure. 1. Architecture of MASCNN. Numbers below the feature maps indicate channel numbers. 1/2 and 1/4 mean the relative
+scale of the filters and images.
+</div>
+		</div>
+        <h2>Results</h2>
+			<div align="center" id="res">
+			<p style="text-align: center">Table 1: BD-rate reduction of the proposed method compared to HEVC.
+			<img src="./img/res.PNG" width="70%">
+		  	<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:5px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:0px 0px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-s6z2{text-align:center}
+</style>
+	
+</div>
+
+		<div class="download sec">
+			<h2>Download</h2>
+			<div>
+				<li><strong><a href="https://ieeexplore.ieee.org/document/8803148">Paper</a></strong>  </li>
+				<!--<li><strong>Supplementary Material</strong>: <a href="http://www.icst.pku.edu.cn/course/icb/Projects/MALDEC_files/files/supp.pdf">pdf</a></li>-->
+			</div>
+		</div>
+
+	  <div class="citation sec">
+			<h2>Citation</h2>
+			<p class="bibtex">@inproceedings{MASCNN, 
+&nbsp;&nbsp; author={S. Xia and W. Yang and Y. Hu and J. Liu}, 
+&nbsp;&nbsp; booktitle={IEEE International Conference on Image Processing (ICIP)}, 
+&nbsp;&nbsp; title={Deep Inter Prediction Via Pixel-Wise Motion Oriented Reference Generation}, 
+&nbsp;&nbsp; year={2019}, 
+&nbsp;&nbsp; }
+			</p>
+	  </div>
+
+<!-- 		<div class="experiments sec">
+			<h2>Additional Results</h2>
+			<div id="images">
+				<h3>Action Detection Performance</h3>
+				<div align="center" id="table">
+					<p>Table 1. F 1−Score on OAD dataset</p>
+					<img src='OAD/figures/OAD_table.png' width='50%' >
+				</div>
+			</div>
+		</div>
+		<br></br> -->
+
+
+<div class="citation sec">
+    <h2>&nbsp;</h2>
+    </div>
+  </div>
+</div>
+
+
+</body></html>
